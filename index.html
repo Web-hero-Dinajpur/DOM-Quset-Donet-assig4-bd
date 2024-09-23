@@ -12,7 +12,7 @@
 
 <body>
     <!-- top header section  -->
-    <header class="top-header bg-[#F9F7F3] pt-4 pb-10">
+    <header class="top-header sticky top-0 bg-[#F9F7F3] pt-4 pb-10">
         <div class="container mx-auto flex justify-between">
             <div>
                 <a href="Home.html" class="bg-[#b4f461] w-40 h-16 flex justify-center items-center rounded-lg">Blog</a>
@@ -24,16 +24,19 @@
             </div>
             <div class="flex gap-3 justify-center items-center">
                 <img class="w-8 h-8" src="assets/coin.png" alt="">
-                <h2 class="text-slate-500">5500 <span>BDT</span></h2>
+                <h2 class="text-slate-500">
+                    <span id="Current">5500</span> BDT
+                </h2>
             </div>
         </div>
     </header>
     <!-- main section  -->
     <main class="container mx-auto">
         <section class="mt-20">
-            <div class="w-36 mx-auto flex gap-4 top-header">
-                <button class="bg-[#b4f461] px-8 py-4  rounded-lg">Donation</button>
-                <button>History</button>
+            <div class="w-80 mx-auto flex gap-4">
+                <div class="btn px-10 py-8 flex-nowrap text-xl">Donation</div>
+                <div class="btn px-10 py-8 flex-nowrap text-xl">History</div>
+
             </div>
         </section>
         <!-- card body section  -->
@@ -46,7 +49,7 @@
                     <div class="flex gap-3 items-center btn w-2/6">
                         <img class="-ml-16" src="assets/coin.png" alt="">
                         <h2 class="text-slate-500">
-                            <span id="Current-Donate">10</span> BDT
+                            <span id="Current-Donate">100</span> BDT
                         </h2>
                     </div>
                     <h2 class="top-header my-4">Donate for Flood at Noakhali, Bangladesh</h2>
@@ -70,11 +73,46 @@
                 </div>
             </div>
         </section>
+        <!-- second card  -->
+        <section class="mt-12 border p-8 rounded-lg">
+            <div class="grid grid-cols-2 gap-12">
+                <div>
+                    <img class="w-full" src="assets/quota-protest.png" alt="">
+                </div>
+                <div class="w-11/12">
+                    <div class="flex gap-3 items-center btn w-2/6">
+                        <img class="-ml-16" src="assets/coin.png" alt="">
+                        <h2 class="text-slate-500">
+                            <span id="Current-Donate2">300</span> BDT
+                        </h2>
+                    </div>
+                    <h2 class="top-header my-4">Donate for Flood Relief in Feni,Bangladesh</h2>
+                    <p class="leading-7"> The recent floods in Feni have devastated local communities, leading to severe
+                        disruption and loss. Your generous donation will help provide immediate aid, including food,
+                        clean water, and medical supplies, to those affected by this calamity. Together, we can offer
+                        crucial support and help rebuild lives in the aftermath of this disaster. Every contribution
+                        counts towards making a real difference. Please consider donating today to assist those in
+                        urgent need.
+                    </p>
+
+                    <div>
+                        <input id="input-donate2" type="text" placeholder="Write donation Amount"
+                            class="input input-bordered my-8 w-full" />
+                        <button id="btn-donate" class="bg-[#b4f461] top-header px-8 py-4 w-full rounded-lg">Donate
+                            Now</button>
+                    </div>
+
+                    <!-- input section  -->
+                </div>
+            </div>
+        </section>
+
     </main>
     <!-- js file -->
     <script src="JS/utility.js"></script>
     <script src="JS/donation.js"></script>
     <script src="JS/history.js"></script>
+    <script src="JS/TotalDonate.js"></script>
 </body>
 
 </html>
