@@ -12,23 +12,73 @@
 
 <body>
     <!-- top header section  -->
-    <header class="top-header bg-yellow-50 pt-4 pb-10">
+    <header class="top-header bg-[#F9F7F3] pt-4 pb-10">
         <div class="container mx-auto flex justify-between">
-            <h2 class="bg-blue-300 w-40 h-16 flex justify-center items-center rounded-lg">Blog</h2>
-            <div class="flex gap-3 justify-center items-center">
+            <div>
+                <a href="Home.html" class="bg-[#b4f461] w-40 h-16 flex justify-center items-center rounded-lg">Blog</a>
+            </div>
+            <div class="flex gap-4 justify-center items-center">
                 <img class="h-12 w-12" src="assets/logo.png" alt="">
+
                 <head>Donate Bangladesh</head>
             </div>
             <div class="flex gap-3 justify-center items-center">
                 <img class="w-8 h-8" src="assets/coin.png" alt="">
-                <h2>5500 <span>BDT</span></h2>
+                <h2 class="text-slate-500">5500 <span>BDT</span></h2>
             </div>
         </div>
     </header>
     <!-- main section  -->
-    <main>
-        <section>
+    <main class="container mx-auto">
+        <section class="mt-20">
+            <div class="w-36 mx-auto flex gap-4 top-header">
+                <button class="bg-[#b4f461] px-8 py-4  rounded-lg">Donation</button>
+                <button>History</button>
+            </div>
+        </section>
+        <!-- card body section  -->
+        <section class="mt-12 border p-8 rounded-lg">
+            <div class="grid grid-cols-2 gap-12">
+                <div>
+                    <img class="w-full" src="assets/noakhali.png" alt="">
+                </div>
+                <div class="w-11/12">
+                    <div class="flex gap-3 items-center btn w-2/6">
+                        <img class="-ml-16" src="assets/coin.png" alt="">
+                        <h2 class="text-slate-500">0<span> BDT</span></h2>
+                    </div>
+                    <h2 class="top-header my-4">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <p class="leading-7"> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                        donation will help provide essential supplies and to those affected by this disaster. Every
+                        contribution, big or small, makes difference. Please join us in supporting the relief efforts
+                        and making a positive impact on the lives of those in need.
+                    </p>
+                    <form class="card-body pl-0">
+                        <div class="form-control">
+                            <input type="number" placeholder="Write Donation Amount" class="input input-bordered"
+                                required />
+                        </div>
+                        <div class="form-control mt-4">
+                            <button class="bg-[#b4f461] top-header px-8 py-4  rounded-lg" onclick="my_modal_4.showModal()">Donate
+                                Now</button>
+                            <!-- <dialog id="my_modal_4" class="modal">
+                                <div class="modal-box w-11/12 max-w-5xl">
+                                    <h3 class="text-lg font-bold">Hello!</h3>
+                                    <p class="py-4">Click the button below to close</p>
+                                    <div class="modal-action">
+                                        <form method="dialog">
+                                            
+                                            <button class="btn">Close</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog> -->
+                        </div>
+                    </form>
 
+                    <!-- input section  -->
+                </div>
+            </div>
         </section>
     </main>
     <!-- js file -->
