@@ -45,44 +45,36 @@
                 <div class="w-11/12">
                     <div class="flex gap-3 items-center btn w-2/6">
                         <img class="-ml-16" src="assets/coin.png" alt="">
-                        <h2 class="text-slate-500">0<span> BDT</span></h2>
+                        <h2 class="text-slate-500">
+                            <span id="Current-Donate">10</span> BDT
+                        </h2>
                     </div>
                     <h2 class="top-header my-4">Donate for Flood at Noakhali, Bangladesh</h2>
-                    <p class="leading-7"> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                    <p class="leading-7"> The recent floods in Noakhali have caused significant damage to homes
+                        infrastructure. Your
                         donation will help provide essential supplies and to those affected by this disaster. Every
                         contribution, big or small, makes difference. Please join us in supporting the relief efforts
                         and making a positive impact on the lives of those in need.
                     </p>
                     <form class="card-body pl-0">
                         <div class="form-control">
-                            <input type="number" placeholder="Write Donation Amount" class="input input-bordered"
-                                required />
+                            <input id="input-donate" type="number" placeholder="Write Donation Amount"
+                                class="input input-bordered" required />
                         </div>
                         <div class="form-control mt-4">
-                            <button class="bg-[#b4f461] top-header px-8 py-4  rounded-lg" onclick="my_modal_4.showModal()">Donate
+                            <button id="btn-donate" class="bg-[#b4f461] top-header px-8 py-4  rounded-lg">Donate
                                 Now</button>
-                            <!-- <dialog id="my_modal_4" class="modal">
-                                <div class="modal-box w-11/12 max-w-5xl">
-                                    <h3 class="text-lg font-bold">Hello!</h3>
-                                    <p class="py-4">Click the button below to close</p>
-                                    <div class="modal-action">
-                                        <form method="dialog">
-                                            
-                                            <button class="btn">Close</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </dialog> -->
                         </div>
                     </form>
-
                     <!-- input section  -->
                 </div>
             </div>
         </section>
     </main>
     <!-- js file -->
-    <script src=""></script>
+    <script src="JS/utility.js"></script>
+    <script src="JS/donation.js"></script>
+    <script src="JS/history.js"></script>
 </body>
 
 </html>
