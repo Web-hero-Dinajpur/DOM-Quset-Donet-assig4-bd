@@ -3,22 +3,19 @@ document.getElementById('btn-donate').addEventListener('click', function (event)
 
     const NewDontaion = getDonationById('input-donate');
     const CurrentTextDonation = getDonationTextId('Current-Donate');
-    const currentNewDonate = NewDontaion + CurrentTextDonation;
-    document.getElementById('Current-Donate').innerText = currentNewDonate;
 
-    const title = document.getElementById('title');
-
-    if(isNaN(NewDontaion)){
+    if(NewDontaion <= 0 || isNaN(NewDontaion)){
         alert('Failed to your donation');
         return ; 
-    }
-    if(NewDontaion < 0){
-        alert('Failed to your donation')
-        return NewDontaion;
     }
     else{
         alert('CONGRATULATION SUCCESS YOUR DONATION');
     }
+
+    const currentNewDonate = NewDontaion + CurrentTextDonation;
+    document.getElementById('Current-Donate').innerText = currentNewDonate;
+
+    const title = document.getElementById('title');
  
     const div = document.createElement('div');
     div.classList.add('bg-gray-100');
