@@ -1,10 +1,10 @@
-document.getElementById('btn-donate').addEventListener('click', function (event) {
+document.getElementById('btn-donate2').addEventListener('click', function(event){
     event.preventDefault();
-
-    const NewDontaion = getDonationById('input-donate');
-    const CurrentTextDonation = getDonationTextId('Current-Donate');
+    const NewDontaion = getDonationById('input-donate2');
+    const CurrentTextDonation = getDonationTextId('Current-Donate2');
     const currentNewDonate = NewDontaion + CurrentTextDonation;
-    document.getElementById('Current-Donate').innerText = currentNewDonate;
+    document.getElementById('Current-Donate2').innerText = currentNewDonate;
+
 
     const title = document.getElementById('title');
 
@@ -26,5 +26,4 @@ document.getElementById('btn-donate').addEventListener('click', function (event)
     <h4>${NewDontaion} ${title}</h4>`
 
     document.getElementById('history-report').appendChild(div);
-
 })
