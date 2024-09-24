@@ -15,3 +15,39 @@ document.getElementById('btn-donate2').addEventListener('click', function (event
     
     document.getElementById("Current-Balance").innerText = NewTotalDonat;
 })
+
+document.getElementById('btn-donate3').addEventListener('click', function (event) {
+    event.preventDefault();
+    const NewDontaion = getDonationById('input-donate3');
+    const totalDonate = getDonationTextId('Current-Balance');
+    const NewTotalDonat = totalDonate - NewDontaion;
+    
+    document.getElementById("Current-Balance").innerText = NewTotalDonat;
+})
+
+document.getElementById('btn-donate4').addEventListener('click', function (event) {
+    event.preventDefault();
+    const NewDontaion = getDonationById('input-donate4');
+    const totalDonate = getDonationTextId('Current-Balance');
+    const NewTotalDonat = totalDonate - NewDontaion;
+    
+    document.getElementById("Current-Balance").innerText = NewTotalDonat;
+})
+
+document.getElementById('btn-donate5').addEventListener('click', function (event) {
+    event.preventDefault();
+    const NewDontaion = getDonationById('input-donate5');
+    const totalDonate = getDonationTextId('Current-Balance');
+    const NewTotalDonat = totalDonate - NewDontaion;
+    
+    document.getElementById("Current-Balance").innerText = NewTotalDonat;
+})
+
+document.getElementById('btn-donate6').addEventListener('click', function (event) {
+    event.preventDefault();
+    const NewDontaion = getDonationById('input-donate6');
+    const totalDonate = getDonationTextId('Current-Balance');
+    const NewTotalDonat = totalDonate - NewDontaion;
+    
+    document.getElementById("Current-Balance").innerText = NewTotalDonat;
+})
