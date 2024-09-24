@@ -18,8 +18,8 @@ document.getElementById('btn-donate2').addEventListener('click', function(event)
     const div = document.createElement('div');
     div.classList.add('bg-gray-100');
     div.innerHTML = `
-    <h4 class="text-xl text-gray-500">${NewDontaion} ${title}</h4>
-    <p class="text-xs text-gray-500">${new Date().toLocaleString()}</p>`
+   <h4 class="text-xl p-6 border text-gray-500">${NewDontaion} ${title}</h4>
+    <p class="text-xs p-2 border mb-4 text-gray-500">${new Date().toLocaleString()}</p>`
 
     document.getElementById('history-report').appendChild(div);
 })

@@ -12,7 +12,8 @@
 
 <body>
     <!-- top header section  -->
-    <header class="top-header sticky top-0 bg-[#F9F7F3] pt-4 pb-10">
+    <header class="top-header sticky top-0 bg-slate-50 pb-12">
+       <div class="bg-[#F9F7F3] py-10">
         <div class="container mx-auto lg:flex justify-between">
             <div class="">
                 <a href="Home.html" class="bg-[#b4f461] w-40 h-16 mx-auto flex justify-center items-center rounded-lg">Blog</a>
@@ -28,16 +29,18 @@
                     <span id="Current-Balance">5500</span> BDT
                 </h2>
             </div>
+       </div>
         </div>
+        <section class="m-20"></section>
+            <div class="w-80 mx-auto flex gap-4">
+                <div id="show-donation-section" class="rounded-lg cursor-pointer py-6 px-10 border font-semibold bg-[#b4f461] flex-nowrap text-xl">Donation</div>
+                <div id="show-history-section" class="rounded-lg cursor-pointer py-6 px-10 border font-semibold flex-nowrap text-xl">History</div>
+            </div>
+        </section>
     </header>
     <!-- main section  -->
     <main class="container mx-auto">
-        <section class="mt-20">
-            <div class="w-80 mx-auto flex gap-4">
-                <div id="show-donation-section" class="rounded-lg p-6 font-semibold bg-[#b4f461] flex-nowrap text-xl">Donation</div>
-                <div id="show-history-section" class="rounded-lg p-6 font-semibold flex-nowrap text-xl">History</div>
-            </div>
-        </section>
+        
         <!-- card body section  -->
         <section id="add-Donation-section">
             <section class="mt-12 border p-8 rounded-lg">
