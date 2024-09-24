@@ -6,12 +6,7 @@ document.getElementById('btn-donate').addEventListener('click', function(event){
     const currentNewDonate = NewDontaion + CurrentTextDonation;
     document.getElementById('Current-Donate').innerText = currentNewDonate;
 
-    const NewDontaion2 = getDonationById('input-donate2');
-    const CurrentTextDonation2 = getDonationTextId('Current-Donate2');
-    const currentNewDonate2 = NewDontaion2 + CurrentTextDonation2;
-    console.log(currentNewDonate);
-    document.getElementById('Current-Donate2').innerText = currentNewDonate2;
-
+    
     if(isNaN(NewDontaion)){
         alert('Failed to your donation');
         return ; 
